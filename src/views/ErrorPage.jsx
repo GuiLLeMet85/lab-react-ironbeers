@@ -1,0 +1,13 @@
+import React from "react";
+import { Link } from "react-router-dom"
+
+export default function ErrorPage() {
+
+    return (
+        <div className="error-404">
+            <h1>404 - Page not found</h1>
+             <img src= "https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif" alt="cat-finding" />
+        </div>
+
+    )
+}

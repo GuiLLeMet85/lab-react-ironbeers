@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+
+p {
+  font-size: 18px;
+  color: grey;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+
+.home-section {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.sections {
+  border: 0.1px solid;
+}
+
+.sections img {
+  max-width: 45vw;
+}
+
+.info-section {
+  max-width: 30vw;
+  text-align: center;
+  padding: 2vh 2vw;
+}
+
