@@ -1,8 +1,8 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import beersPicture from "../assets/beers.png";
 import NewBeerPicture from "../assets/new-beer.png";
 import RandomBeerPicture from "../assets/random-beer.png";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 export default function Home() {
     return (

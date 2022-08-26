@@ -69,12 +69,31 @@ h3 {
 }
 
 .sections img {
-  max-width: 45vw;
+  max-width: 99vw;
 }
 
 .info-section {
-  max-width: 30vw;
+  max-width: 90vw;
   text-align: center;
-  padding: 2vh 2vw;
+  padding: 1vh 2vw 3vh;
+}
+
+.header-bar {
+  height: 6vh;
+  background-color: rgb(16, 237, 253);
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.5vh 0.5vw;
+  position: fixed;
+  width: 100%;
+
+}
+
+.icon-home {
+  font-size: 30px;
+  margin: 0 auto;
+  color: white;
 }
 
