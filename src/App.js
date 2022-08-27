@@ -10,7 +10,6 @@ import Header from "./components/Header";
 import { useLocation } from 'react-router-dom';
 
 
-
 function App(props) {
  
   const location = useLocation();
@@ -19,10 +18,8 @@ function App(props) {
       return location.pathname.toLowerCase() === url.toLowerCase();
   }
   
-
   return (
 
-  
     <div className="App">
       
       { isCurrentURL('/') ? null: <Header /> }

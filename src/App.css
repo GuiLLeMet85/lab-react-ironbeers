@@ -80,6 +80,7 @@ a {
   max-width: 90vw;
   text-align: center;
   padding: 1vh 2vw 3vh;
+  margin: 0 auto;
 }
 
 .header-bar {
