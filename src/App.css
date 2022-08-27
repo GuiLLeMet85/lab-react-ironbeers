@@ -55,6 +55,10 @@ h3 {
   font-size: 1.5rem;
 }
 
+a {
+  text-decoration: none;;
+}
+
 
 .home-section {
   display: flex;
@@ -86,7 +90,6 @@ h3 {
   align-items: center;
   justify-content: space-around;
   padding: 0.5vh 0.5vw;
-  position: fixed;
   width: 100%;
 
 }
@@ -97,3 +100,6 @@ h3 {
   color: white;
 }
 
+.error-404, .sect-beers, .sect-error-404, sect-random {
+  padding: 4vh 0vw;
+}
