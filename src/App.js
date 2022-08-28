@@ -8,6 +8,7 @@ import NewBeer from "./views/NewBeer";
 import Beers from "./views/Beers";
 import Header from "./components/Header";
 import { useLocation } from 'react-router-dom';
+import BeerDetails from './views/BeerDetails';
 
 
 function App(props) {
@@ -28,6 +29,7 @@ function App(props) {
  
         <Route path="/" element={<Home />} />
         <Route path="/beers"  element={<Beers /> } />
+        <Route path="/beers/:id" element={<BeerDetails />} />
         <Route path='/random-beer' element={<RandomBeer />} />
         <Route path='/new-beer'element={<NewBeer />} />
         <Route path="*" element={<ErrorPage />} />

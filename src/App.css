@@ -44,15 +44,16 @@ p {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 400;
 }
 
 a {
@@ -102,5 +103,30 @@ a {
 }
 
 .error-404, .sect-beers, .sect-error-404, sect-random {
-  padding: 4vh 0vw;
+  padding: 0;
+}
+
+.beer-img {
+  width: 30vw;
+  padding: 2vh 2vw;
+}
+
+.beer-img img {
+  width: 10vw;
+}
+
+.beer-info {
+  width: 60vw;
+  padding: 2vh 2vw;
+}
+
+.beer-card {
+  padding: 4vh 2vw;
+  background-color: antiquewhite;
+  margin-bottom: 2vh;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
 }
