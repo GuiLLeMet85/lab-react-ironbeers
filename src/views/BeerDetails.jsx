@@ -30,13 +30,12 @@ export default function BeerDetails() {
             {beer && (
                 <div className="beer-details-card">
                     <img src={beer.image_url} alt="{beer.name}"></img>
-                    
                     <h2>{beer.name}</h2>
                     <p>You know you shouldn't <strong>{beer.targline}</strong></p>
                     <p>{beer.first_brewed}</p>
                     <p>{beer.attenuation_level}</p>
                     <p>{beer.description}</p>
-                    <p>Contri{beer.contributed_by}</p>
+                    <p>Contribution{beer.contributed_by}</p>
 
                 </div>    
             )}
