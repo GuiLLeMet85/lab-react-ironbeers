@@ -34,9 +34,9 @@ export default function Beers(){
                                 </Link>
                             </div>
                             <div className="beer-info">
-                                <h2>{beer.name}</h2>
-                                <p>{beer.tagline}</p>
-                                <h3>Created by: <br></br><span>{beer.name}</span></h3>
+                                <p className="title-beer">{beer.name}</p>
+                                <p className="tagline-beer">{beer.tagline}</p>
+                                <p className="created-beer">Created by: <br></br><span className="name-creater">{beer.name}</span></p>
                             </div>
                             <Outlet />
                         </div>

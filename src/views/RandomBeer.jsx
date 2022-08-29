@@ -30,12 +30,12 @@ export default function RandomBeerPage() {
                  {randomBeer && (
                 <div className="beer-details-card">
                     <img src={randomBeer.image_url} alt="{randomBeer.name}"></img>
-                    <h2>{randomBeer.name}</h2>
-                    <p><strong>{randomBeer.targline}</strong></p>
-                    <p>{randomBeer.first_brewed}</p>
-                    <p>{randomBeer.attenuation_level}</p>
-                    <p>{randomBeer.description}</p>
-                    <p>{randomBeer.contributed_by}</p>
+                    <p className="title-beer">{randomBeer.name}</p>
+                    <p className="tagline-beer">{randomBeer.targline}</p>
+                    <p className="brewed-beer">{randomBeer.first_brewed}</p>
+                    <p className="attenuation-beer">Attenuation Beer:<br></br>{randomBeer.attenuation_level}</p>
+                    <p className="description-beer">{randomBeer.description}</p>
+                    <p className="created-beer">{randomBeer.contributed_by}</p>
 
                 </div>    
             )}

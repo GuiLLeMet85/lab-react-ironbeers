@@ -112,12 +112,42 @@ a {
 }
 
 .beer-img img {
-  width: 10vw;
+  width: 15vw;
 }
 
 .beer-info {
   width: 60vw;
   padding: 2vh 2vw;
+}
+
+p.title-beer{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+p.tagline-beer{
+  font-size: 1.1rem;
+  color: blueviolet;
+  font-weight: 600;
+}
+p.created-beer{
+  font-size: 1rem;
+  font-weight: 600;
+
+}
+span.name-creater {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+p.brewed-beer {
+  color: red;
+}
+
+p.description-beer {
+  padding: 0 4vw;
+  font-size: 0.9rem;
 }
 
 .beer-card {
@@ -129,4 +159,42 @@ a {
   justify-content: space-around;
   align-content: center;
   align-items: center;
+}
+
+form.add-form {
+  display: flex;
+  flex-direction: column;
+  margin: 2vh auto;
+  width: 70vw;
+}
+
+input[type="text"], input[type="number"] {
+  padding: 1.5vh 2vw;
+  margin: 1.5vh 0;
+}
+
+input.description-input {
+  height: 9vh;
+}
+
+input {
+  border-radius: 10px;
+}
+
+form.add-form button {
+  border-radius: 10px;
+  height: 8vh;
+  margin-top: 3vh;
+  background-color:  rgb(16, 237, 253);
+}
+
+.beer-details-card img {
+  width: 20vw;
+  padding: 2vh 2vw;
+}
+
+.beer-details-card {
+  padding: 4vh 2vw;
+  background-color: antiquewhite;
+  margin-bottom: 2vh;
 }
