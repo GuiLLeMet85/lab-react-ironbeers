@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
 import {useParams, useNavigate} from 'react-router-dom';
-import { getDefaultNormalizer } from "@testing-library/react";
 
 export default function BeerDetails() {
 
@@ -23,7 +22,7 @@ export default function BeerDetails() {
     getData();
     }, [id]);
 
-
+    
     return (
         <div>
             <h1> Beer details </h1>

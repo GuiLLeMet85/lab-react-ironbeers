@@ -1,23 +1,37 @@
 import React, {useState, useEffect} from 'react'
 import axios from "axios";
-import {Link, Outlet} from "react-router-dom"
+import {Link, Navigate, Outlet, useNavigate, useParams} from "react-router-dom"
 
 
 export default function Beers(){
 
     const [beers, setBeers]= useState([{}]);
+    const navigate = useNavigate();
+
+    const { id }  = useParams();
 
     useEffect(() => {
         const getData = async () => {
           try {
-            const response = await axios.get('https://ih-beers-api2.herokuapp.com/beers')
+            const response = await axios.get(`https://ih-beers-api2.herokuapp.com/beers/`);
             setBeers(response.data);
           } catch (error) {
             console.error(error)
           }
         }
         getData();
-      }, [])
+      }, [id])
+
+
+      const handleDelete = async () => {
+        try {
+          await axios.delete(`https://ih-beers-api2.herokuapp.com/beers/${id}`);
+          navigate('/beers');
+        } 
+        catch (error) {
+          console.error(error)
+        }
+      }
 
 
     return (
@@ -37,7 +51,9 @@ export default function Beers(){
                                 <p className="title-beer">{beer.name}</p>
                                 <p className="tagline-beer">{beer.tagline}</p>
                                 <p className="created-beer">Created by: <br></br><span className="name-creater">{beer.name}</span></p>
+                                <button onClick= {handleDelete}>Delete</button>
                             </div>
+                        
                             <Outlet />
                         </div>
                 );   
