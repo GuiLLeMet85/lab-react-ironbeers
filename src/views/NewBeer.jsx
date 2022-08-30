@@ -40,7 +40,8 @@ export default function NewBeer() {
         try {
             const newBeerData = await axios.post('https://ih-beers-api2.herokuapp.com/beers/new', newBeer);
                 //console.log(newBeerData)
-                navigate(`/beers/`)
+                // navigate(`/beers/`)
+                navigate(`/${newBeerData.data.data.id}`);
         } 
             catch (error) {
                 console.error(error);

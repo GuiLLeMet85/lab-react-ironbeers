@@ -5,7 +5,7 @@ import {Link, Navigate, Outlet, useNavigate, useParams} from "react-router-dom"
 
 export default function Beers(){
 
-    const [beers, setBeers]= useState([{}]);
+    const [beers, setBeers]= useState(null);
     const navigate = useNavigate();
 
     const { id }  = useParams();
